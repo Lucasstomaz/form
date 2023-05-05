@@ -234,15 +234,18 @@ button {
     height: 75px;
   }
 
-  header h1 {
+  header {
+    max-height: 170px;
     text-align: center;
+  }
+
+  header h1 {
     width: 350px;
     font-size: 30px;
     line-height: 40px;
   }
 
   header p {
-    text-align: center;
     width: 350px;
     font-size: 18px;
     line-height: 25px;
@@ -316,5 +319,9 @@ button {
     border: none;
     color: white;
     background-color: #ff8100;
+  }
+
+  select {
+    font-size: 18px;
   }
 }
