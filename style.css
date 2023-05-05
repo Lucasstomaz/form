@@ -87,19 +87,20 @@ fieldset legend {
   padding-bottom: 16px;
 
   font-family: 'Staatliches';
-  font-size: 24px;
+  font-size: 20px;
   line-height: 34px;
 
   color: #535971;
 }
 
 label {
+  font-family: 'Staatliches';
   display: flex;
   margin: 8px 0 8px;
 
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 24px;
 
   color: #4e4958;
@@ -215,22 +216,33 @@ button {
   }
 
   .page {
-    min-height: 600px;
+    min-height: 500px;
     width: 100vw;
   }
 
   header {
     width: 350px;
-    margin: 20px 15px 20px;
+    margin: 5px 15px 20px;
+  }
+
+  .logo {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 75px;
   }
 
   header h1 {
+    text-align: center;
     width: 350px;
     font-size: 30px;
     line-height: 40px;
   }
 
   header p {
+    text-align: center;
     width: 350px;
     font-size: 18px;
     line-height: 25px;
@@ -241,7 +253,9 @@ button {
     padding: 20px 20px 0px 20px;
     height: 100px;
 
-    min-height: 600px;
+    border-radius: 20px 20px 0 0;
+
+    min-height: 550px;
   }
 
   footer {
@@ -260,6 +274,10 @@ button {
   footer .button {
     width: 294px;
     background: #ff8100;
+  }
+
+  .contatoWpp {
+    border-radius: 0 0 20px 20px;
   }
 
   .contatoWpp a {
