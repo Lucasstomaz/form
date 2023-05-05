@@ -5,13 +5,17 @@
 }
 
 body {
-  background: #35a700;
+  background: linear-gradient(
+    90deg,
+    rgba(30, 217, 79, 1) 0%,
+    rgba(0, 170, 1, 1) 100%
+  );
 
   font-family: 'Poppins';
 }
 
 body::before {
-  content: '';
+  content: url(./images/background.jpg);
   width: 100%;
   height: 436px;
 
@@ -227,6 +231,10 @@ footer .button {
 }
 
 @media (max-width: 600px) {
+  body {
+    background: #07d800;
+  }
+
   .page {
     width: 100vw;
   }
@@ -237,11 +245,13 @@ footer .button {
   }
 
   header h1 {
+    width: 400px;
     font-size: 30px;
     line-height: 40px;
   }
 
   header p {
+    width: 400px;
     font-size: 18px;
     line-height: 35px;
   }
@@ -280,5 +290,22 @@ footer .button {
 
   fieldset {
     margin-bottom: 55px;
+  }
+
+  body::before {
+    content: url();
+    width: 100%;
+    height: 436px;
+
+    font-family: 'Poppins';
+
+    position: absolute;
+
+    background: #07d800;
+    background-size: auto;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 }
