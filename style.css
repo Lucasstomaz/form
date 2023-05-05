@@ -215,31 +215,33 @@ button {
   }
 
   .page {
-    height: 100vh;
+    min-height: 600px;
     width: 100vw;
   }
 
   header {
     width: 350px;
-    margin: 20px 10px 20px;
+    margin: 20px 15px 20px;
   }
 
   header h1 {
-    width: 400px;
+    width: 350px;
     font-size: 30px;
     line-height: 40px;
   }
 
   header p {
-    width: 400px;
+    width: 350px;
     font-size: 18px;
-    line-height: 35px;
+    line-height: 25px;
   }
 
   form {
     width: 100vw;
-    padding: 40px 20px 0px 20px;
-    height: 400px;
+    padding: 20px 20px 0px 20px;
+    height: 100px;
+
+    min-height: 600px;
   }
 
   footer {
