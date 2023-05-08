@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -19,17 +19,17 @@
   <header>
     <img src="./images/credfacil-branca-640w.png">
     <h1>FORMULÁRIO PARA CONTATO</h1>
-    <p>Preencha o formulário abaixo entramos em contato.</p>
+    <p>Preencha o formulário abaixo para entramos em contato.</p>
   </header>
   <form>
     <label for="name">NOME COMPLETO</label>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" required placeholder="Ex: João Paulo">
 
     <label for="number">NÚMERO DE CELULAR</label>
-    <input type="text" name="number" id="number">
+    <input type="text" name="number" id="number" required placeholder="Insira um número com DDD">
 
     <label for="bem">QUAL BEM VOCÊ GOSTARIA DE ADQUIRIR?</label>
-    <select name="bem" id="bem">
+    <select name="bem" id="bem" required>
       <option value="veiculo">Veículo</option>
       <option value="casa">Casa</option>
       <option value="caminhao">Caminhão</option>
@@ -38,7 +38,7 @@
     </select>
 
     <label for="valor">QUAL O VALOR DO BEM?</label>
-    <input type="number" name="valor" id="valor">
+    <input type="number" name="valor" id="valor" step="0.01" min="0.01" required placeholder="R$ 1.000,00">
 
     <button type="submit">
       Solicitar contato
