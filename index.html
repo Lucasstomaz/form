@@ -17,28 +17,28 @@
 
 <body>
   <header>
-    <img src="./images/credfacil-branca-640w.png" alt="">
+    <img src="./images/credfacil-branca-640w.png">
     <h1>FORMULÁRIO PARA CONTATO</h1>
     <p>Preencha o formulário abaixo entramos em contato.</p>
   </header>
-  <form action="">
+  <form>
     <label for="name">NOME COMPLETO</label>
-    <input type="text" id="name">
+    <input type="text" name="name" id="name">
 
-    <label for="name">NÚMERO DE CELULAR</label>
-    <input type="text" id="name">
+    <label for="number">NÚMERO DE CELULAR</label>
+    <input type="text" name="number" id="number">
 
-    <label for="qualbem">QUAL BEM VOCÊ GOSTARIA DE ADQUIRIR?</label>
-    <select name="qualbem" id="qualbem">
-      <option value="">Veículo</option>
-      <option value="">Casa</option>
-      <option value="">Caminhão</option>
-      <option value="">Maquinário agrícola</option>
-      <option value="">Outro</option>
+    <label for="bem">QUAL BEM VOCÊ GOSTARIA DE ADQUIRIR?</label>
+    <select name="bem" id="bem">
+      <option value="veiculo">Veículo</option>
+      <option value="casa">Casa</option>
+      <option value="caminhao">Caminhão</option>
+      <option value="maquinario">Maquinário agrícola</option>
+      <option value="outro">Outro</option>
     </select>
 
     <label for="valor">QUAL O VALOR DO BEM?</label>
-    <input type="number" id="valor">
+    <input type="number" name="valor" id="valor">
 
     <button type="submit">
       Solicitar contato
@@ -46,7 +46,7 @@
   </form>
 
   <div class="whatsapp">
-    <a href="">OU ENTRE EM CONTATO PELO WHATSAPP</a>
+    <a href="wa.me/5547">OU ENTRE EM CONTATO PELO WHATSAPP</a>
     <img src="./images/whatsapp.png" alt="">
   </div>
 
@@ -54,6 +54,8 @@
     <p>© 2023
       Todos os direitos reservados | CredFácil Rio do Sul.</p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
