@@ -1,19 +1,35 @@
-const handleSubmit = (event) => {
-  event.preventDefault();
+const button = document.querySelector('button')
 
-  const name = document.querySelector('input[name=name]').value;
-  const number = document.querySelector('input[name=number]').value;
-  const bem = document.querySelector('input[name=bem]').value;
-  const valor = document.querySelector('input[name=valor]').value;
+const addloading = () => {
+  button.innerHTML = '<img src="./images/loading.png" class="loading">'
+}
+
+const removeloading = () => {
+  button.innerHTML = 'Enviado'
+}
+
+const handleSubmit = event => {
+  event.preventDefault()
+  addloading()
+
+  const name = document.querySelector('input[name=name]').value
+  const number = document.querySelector('input[name=number]').value
+  const bem = document.querySelector('select[name=bem]').value
+  const valor = document.querySelector('input[name=valor]').value
 
   fetch('https://api.sheetmonkey.io/form/jLPs7hu4zRHMvXf5aQMZ3', {
     method: 'post',
     headers: {
-      'Accept': 'application/json',
+      Accept: 'application/json',
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ name, number, bem, valor }),
-  });
+    body: JSON.stringify({ name, number, bem, valor })
+  }).then(
+    () =>
+      alert(
+        'Formulário preenchido com sucesso, em breve entraremos contato!'
+      ) && removeloading()
+  )
 }
 
-document.querySelector('form').addEventListener('submit', handleSubmit);
+document.querySelector('form').addEventListener('submit', handleSubmit)
