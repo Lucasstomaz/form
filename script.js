@@ -24,12 +24,7 @@ const handleSubmit = event => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ name, number, bem, valor })
-  }).then(
-    () =>
-      alert(
-        'Formulário preenchido com sucesso, em breve entraremos contato!'
-      ) && removeloading()
-  )
+  }).then(() => removeloading())
 }
 
 document.querySelector('form').addEventListener('submit', handleSubmit)
