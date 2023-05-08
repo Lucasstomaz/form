@@ -31,7 +31,7 @@ header {
 
   gap: 1rem;
 
-  margin: 1rem 0 0.1rem;
+  margin: 1rem 1rem 0.1rem;
 }
 
 header img {
@@ -39,11 +39,11 @@ header img {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 header p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 form {
@@ -66,7 +66,9 @@ form input {
   border-radius: 8px;
 
   height: 3rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  font-size: 1rem;
 }
 
 form select {
@@ -76,7 +78,11 @@ form select {
   border-radius: 8px;
 
   height: 3rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  font-size: 1rem;
+
+  color: #636262;
 }
 
 form button {
