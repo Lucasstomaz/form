@@ -91,6 +91,11 @@ form button {
   height: 3rem;
 }
 
+form button:hover {
+  background: #fdae36;
+  cursor: pointer;
+}
+
 .whatsapp {
   display: flex;
   align-items: center;
@@ -108,6 +113,15 @@ form button {
   text-decoration: none;
   color: #00960d;
   font-weight: 700;
+}
+
+.whatsapp:hover {
+  background-color: rgb(231, 230, 230);
+  cursor: pointer;
+}
+
+.whatsapp a:hover {
+  color: #00ff15;
 }
 
 .whatsapp img {
